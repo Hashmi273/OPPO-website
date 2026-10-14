@@ -255,5 +255,6 @@ em{font-family:var(--serif);font-style:italic;font-weight:500;color:var(--sky)}
 }
 
 .footer__legal-name{display:block;color:#fff;font-weight:700;letter-spacing:.02em;margin-top:.4rem;font-size:.88rem}
+.footer__brand-note{display:block;color:#cbd5e1;font-size:.78rem;margin-top:.35rem;line-height:1.4;opacity:.9}
 .footer__gstin{display:inline-block;background:rgba(28,127,209,.18);color:#d6ecff;border:1px solid rgba(28,127,209,.4);border-radius:6px;padding:.15rem .55rem;font-size:.78rem;font-weight:600;margin-top:.35rem;letter-spacing:.05em}
 .footer__address{margin-top:.6rem;font-size:.84rem;color:#94a9bf;line-height:1.5;max-width:320px}
