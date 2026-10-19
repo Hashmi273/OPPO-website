@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 900" fill="none">
+  <defs>
+    <radialGradient id="fx" cx="50%" cy="40%" r="65%">
+      <stop offset="0%" stop-color="#059669"/>
+      <stop offset="55%" stop-color="#064E3B"/>
+      <stop offset="100%" stop-color="#02140B"/>
+    </radialGradient>
+    <linearGradient id="metal" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#D1FAE5"/>
+      <stop offset="50%" stop-color="#34D399"/>
+      <stop offset="100%" stop-color="#065F46"/>
+    </linearGradient>
+  </defs>
+  <rect width="900" height="900" fill="url(#fx)"/>
+  <circle cx="450" cy="380" r="310" fill="#10B981" fill-opacity="0.14"/>
+  <!-- Find X8 Pro Smartphone Centerpiece -->
+  <g transform="translate(275, 95)">
+    <rect x="0" y="0" width="350" height="680" rx="52" fill="#0B1F16" stroke="url(#metal)" stroke-width="4"/>
+    <circle cx="175" cy="195" r="122" fill="#05110B" stroke="url(#metal)" stroke-width="6"/>
+    <circle cx="175" cy="195" r="104" fill="#0B1D14" stroke="#6EE7B7" stroke-opacity="0.4" stroke-width="1.5"/>
+    <circle cx="132" cy="152" r="28" fill="#020805" stroke="#34D399" stroke-width="2.5"/>
+    <circle cx="218" cy="152" r="28" fill="#020805" stroke="#34D399" stroke-width="2.5"/>
+    <circle cx="132" cy="238" r="28" fill="#020805" stroke="#34D399" stroke-width="2.5"/>
+    <circle cx="218" cy="238" r="28" fill="#020805" stroke="#34D399" stroke-width="2.5"/>
+    <text x="175" y="201" text-anchor="middle" font-family="sans-serif" font-size="16" font-weight="800" letter-spacing="4" fill="#A7F3D0">HASSELBLAD</text>
+    <text x="175" y="575" text-anchor="middle" font-family="sans-serif" font-size="26" font-weight="800" letter-spacing="7" fill="#A7F3D0" opacity="0.8">OPPO</text>
+  </g>
+</svg>

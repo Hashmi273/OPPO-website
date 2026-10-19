@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" fill="none">
+  <defs>
+    <linearGradient id="f27" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#022C22"/>
+      <stop offset="50%" stop-color="#064E3B"/>
+      <stop offset="100%" stop-color="#008544"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#f27)"/>
+  <!-- Water / IP69 Ripple Rings -->
+  <circle cx="540" cy="240" r="190" stroke="#6EE7B7" stroke-opacity="0.25" stroke-width="2"/>
+  <circle cx="540" cy="240" r="145" stroke="#6EE7B7" stroke-opacity="0.35" stroke-width="2"/>
+  <g transform="translate(435, 45) rotate(-6)">
+    <rect x="0" y="0" width="210" height="420" rx="34" fill="#081C13" stroke="#6EE7B7" stroke-width="3"/>
+    <circle cx="105" cy="115" r="68" fill="#04110B" stroke="#34D399" stroke-width="3"/>
+    <circle cx="85" cy="98" r="16" fill="#020805" stroke="#6EE7B7" stroke-width="1.8"/>
+    <circle cx="125" cy="98" r="16" fill="#020805" stroke="#6EE7B7" stroke-width="1.8"/>
+    <circle cx="105" cy="134" r="16" fill="#020805" stroke="#6EE7B7" stroke-width="1.8"/>
+    <text x="105" y="365" text-anchor="middle" font-family="sans-serif" font-size="16" font-weight="800" letter-spacing="3" fill="#A7F3D0">IP69 ARMOUR</text>
+  </g>
+</svg>

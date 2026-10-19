@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" fill="none">
+  <defs>
+    <radialGradient id="g1" cx="75%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#1EC773" stop-opacity="0.45"/>
+      <stop offset="45%" stop-color="#008544" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#04150C" stop-opacity="1"/>
+    </radialGradient>
+    <linearGradient id="phoneBody" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#22382C"/>
+      <stop offset="50%" stop-color="#0E1F16"/>
+      <stop offset="100%" stop-color="#050E09"/>
+    </linearGradient>
+    <linearGradient id="screenGlow" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#00A859"/>
+      <stop offset="50%" stop-color="#005C2E"/>
+      <stop offset="100%" stop-color="#031A0E"/>
+    </linearGradient>
+    <linearGradient id="ring" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#A7F3D0"/>
+      <stop offset="50%" stop-color="#10B981"/>
+      <stop offset="100%" stop-color="#047857"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="1000" fill="#04150C"/>
+  <rect width="1600" height="1000" fill="url(#g1)"/>
+  <!-- Subtle Mumbai Skyline & Grid Glow -->
+  <g stroke="#1EC773" stroke-opacity="0.1" stroke-width="1">
+    <line x1="0" y1="200" x2="1600" y2="200"/>
+    <line x1="0" y1="400" x2="1600" y2="400"/>
+    <line x1="0" y1="600" x2="1600" y2="600"/>
+    <line x1="0" y1="800" x2="1600" y2="800"/>
+    <line x1="400" y1="0" x2="400" y2="1000"/>
+    <line x1="800" y1="0" x2="800" y2="1000"/>
+    <line x1="1200" y1="0" x2="1200" y2="1000"/>
+  </g>
+  <!-- Ambient Light Orbs -->
+  <circle cx="1150" cy="460" r="340" fill="#00A859" fill-opacity="0.18"/>
+  <circle cx="1150" cy="460" r="220" fill="#1EC773" fill-opacity="0.15"/>
+  <!-- Stylized Flagship Smartphone Back (Cosmos Ring Camera) -->
+  <g transform="translate(880, 130) rotate(-8)">
+    <rect x="0" y="0" width="310" height="640" rx="46" fill="url(#phoneBody)" stroke="url(#ring)" stroke-width="3"/>
+    <!-- Cosmos Camera Module -->
+    <circle cx="155" cy="175" r="108" fill="#07120C" stroke="url(#ring)" stroke-width="5"/>
+    <circle cx="155" cy="175" r="92" fill="#0D1F16" stroke="#1EC773" stroke-opacity="0.35" stroke-width="1.5"/>
+    <!-- 4 Hasselblad-style Lenses -->
+    <circle cx="118" cy="138" r="24" fill="#030806" stroke="#34D399" stroke-width="2"/>
+    <circle cx="118" cy="138" r="9" fill="#064E3B"/>
+    <circle cx="192" cy="138" r="24" fill="#030806" stroke="#34D399" stroke-width="2"/>
+    <circle cx="192" cy="138" r="9" fill="#064E3B"/>
+    <circle cx="118" cy="212" r="24" fill="#030806" stroke="#34D399" stroke-width="2"/>
+    <circle cx="118" cy="212" r="9" fill="#064E3B"/>
+    <circle cx="192" cy="212" r="24" fill="#030806" stroke="#34D399" stroke-width="2"/>
+    <circle cx="192" cy="212" r="9" fill="#064E3B"/>
+    <!-- Center Brand Mark -->
+    <text x="155" y="180" text-anchor="middle" font-family="sans-serif" font-size="13" font-weight="700" letter-spacing="3" fill="#A7F3D0">AI CAMERA</text>
+    <text x="155" y="540" text-anchor="middle" font-family="sans-serif" font-size="22" font-weight="800" letter-spacing="6" fill="#6EE7B7" opacity="0.7">OPPO</text>
+  </g>
+  <!-- Second Overlapping Front Display Phone -->
+  <g transform="translate(1070, 210) rotate(6)">
+    <rect x="0" y="0" width="290" height="610" rx="44" fill="url(#screenGlow)" stroke="#A7F3D0" stroke-width="2.5"/>
+    <circle cx="145" cy="26" r="6" fill="#021008"/>
+    <path d="M20 420 Q145 320 270 440 L270 590 L20 590 Z" fill="#1EC773" fill-opacity="0.22"/>
+    <text x="145" y="250" text-anchor="middle" font-family="sans-serif" font-size="42" font-weight="800" fill="#FFFFFF" opacity="0.92">09:41</text>
+    <text x="145" y="285" text-anchor="middle" font-family="sans-serif" font-size="13" font-weight="600" letter-spacing="2" fill="#D1FAE5">SUPERVOOC 80W</text>
+  </g>
+</svg>

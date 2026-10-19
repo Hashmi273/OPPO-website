@@ -1,206 +1,229 @@
+@font-face {
+  font-family: "OPPOSans";
+  src: url("https://www.oppo.com/content/dam/statics/fonts/en/OPPOSans3.0En-VF.woff2") format("woff2");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
 :root{
-  --sky:#1c7fd1;          /* logo blue */
-  --sky-600:#1568b0;
-  --sky-400:#4aa3e8;
-  --sky-100:#e8f3fc;
-  --sky-50:#f4f9fe;
-  --ink:#0c2238;
-  --muted:#5b6f84;
-  --line:#dbe7f3;
-  --white:#fff;
+  --sky:#008544;          /* OPPO Brand Green */
+  --sky-600:#006835;
+  --sky-400:#1ec773;
+  --sky-100:#e6f6ee;
+  --sky-50:#f4f6f5;
+  --ink:#121212;
+  --muted:#5f6368;
+  --line:#e5e7eb;
+  --surface:#f7f8fa;
+  --white:#ffffff;
   --radius:20px;
-  --shadow:0 18px 50px -20px rgba(28,127,209,.35);
-  --font:'Plus Jakarta Sans',system-ui,sans-serif;
+  --shadow:0 20px 50px -20px rgba(0,0,0,.12);
+  --font:'OPPOSans','Plus Jakarta Sans',system-ui,-apple-system,sans-serif;
   --serif:'Fraunces',Georgia,serif;
 }
+
 *{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth;scroll-padding-top:84px}
-body{font-family:var(--font);color:var(--ink);background:#fff;line-height:1.65;-webkit-font-smoothing:antialiased}
+html{scroll-behavior:smooth;scroll-padding-top:100px}
+body{font-family:var(--font);color:var(--ink);background:#fff;line-height:1.6;-webkit-font-smoothing:antialiased}
 img{display:block;max-width:100%}
 a{color:inherit;text-decoration:none}
 ul{list-style:none}
-.container{width:min(1200px,92%);margin-inline:auto}
+.container{width:min(1312px,92%);margin-inline:auto}
 
-h1,h2,h3{line-height:1.12;letter-spacing:-.02em}
-h1{font-size:clamp(2.4rem,5.6vw,4.4rem);font-weight:800}
-h2{font-size:clamp(1.9rem,3.6vw,2.9rem);font-weight:800}
+h1,h2,h3{line-height:1.14;letter-spacing:-.02em}
+h1{font-size:clamp(2.3rem,4.8vw,4rem);font-weight:700}
+h2{font-size:clamp(1.85rem,3.4vw,2.75rem);font-weight:700}
 h3{font-size:1.2rem;font-weight:700}
-em{font-family:var(--serif);font-style:italic;font-weight:500;color:var(--sky)}
-.hero em,.cta em{color:#bfe3ff}
+em{font-style:normal;color:var(--sky)}
 
-.eyebrow{display:inline-flex;align-items:center;gap:.6rem;font-size:.78rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--sky);margin-bottom:1rem}
-.eyebrow i{width:28px;height:2px;background:currentColor;border-radius:2px}
-.eyebrow--light{color:#d6ecff}
+.eyebrow{display:inline-flex;align-items:center;gap:.55rem;font-size:.76rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--sky);margin-bottom:.75rem}
+.eyebrow i{width:22px;height:2px;background:currentColor;border-radius:2px}
+.eyebrow--light{color:#a7f3d0}
+
+/* Top Notice Bar (OPPO.com style) */
+.notice-bar{background:#191919;color:#fff;font-size:.82rem;padding:.55rem 0;border-bottom:1px solid rgba(255,255,255,.08)}
+.notice-bar__inner{display:flex;justify-content:center;align-items:center;gap:1rem;flex-wrap:wrap;text-align:center}
+.notice-bar a{color:#6ee7b7;font-weight:600;display:inline-flex;align-items:center;gap:.25rem}
+.notice-bar a:hover{text-decoration:underline}
 
 /* Buttons */
-.btn{display:inline-flex;align-items:center;gap:.6rem;padding:.95rem 1.6rem;border-radius:999px;font-weight:700;font-size:.95rem;transition:.25s;border:1.5px solid transparent;cursor:pointer}
-.btn--sm{padding:.6rem 1.2rem;font-size:.88rem}
-.btn--primary{background:var(--sky);color:#fff;box-shadow:0 10px 24px -10px var(--sky)}
-.btn--primary:hover{background:var(--sky-600);transform:translateY(-2px)}
-.btn--white{background:#fff;color:var(--sky-600)}
-.btn--white:hover{transform:translateY(-2px);box-shadow:0 12px 30px -10px rgba(0,0,0,.35)}
-.btn--ghost{border-color:rgba(255,255,255,.7);color:#fff}
-.btn--ghost:hover{background:rgba(255,255,255,.15)}
-.btn--outline{border-color:var(--sky);color:var(--sky)}
-.btn--outline:hover{background:var(--sky);color:#fff}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;padding:.8rem 1.55rem;border-radius:999px;font-weight:600;font-size:.92rem;transition:.25s;border:1.5px solid transparent;cursor:pointer;white-space:nowrap}
+.btn--sm{padding:.52rem 1.15rem;font-size:.84rem}
+.btn--lg{padding:1rem 2rem;font-size:.98rem}
+.btn--primary{background:#121212;color:#fff}
+.btn--primary:hover{background:var(--sky);transform:translateY(-2px)}
+.btn--green{background:var(--sky);color:#fff}
+.btn--green:hover{background:var(--sky-600);transform:translateY(-2px)}
+.btn--white{background:#fff;color:#121212}
+.btn--white:hover{background:#f0fdf4;transform:translateY(-2px)}
+.btn--ghost{border-color:rgba(255,255,255,.65);color:#fff;background:rgba(255,255,255,.06);backdrop-filter:blur(8px)}
+.btn--ghost:hover{background:rgba(255,255,255,.18)}
+.btn--outline{border-color:#d1d5db;color:#121212;background:#fff}
+.btn--outline:hover{border-color:#121212;background:#121212;color:#fff}
 
-/* Header */
-.header{position:fixed;inset:0 0 auto 0;z-index:50;transition:.3s;background:rgba(255,255,255,.0)}
-.header.scrolled,.header.open{background:rgba(255,255,255,.88);backdrop-filter:blur(14px);box-shadow:0 1px 0 var(--line)}
-.header__inner{display:flex;align-items:center;justify-content:space-between;height:76px}
-.brand img{height:35px;width:auto;background:#fff;border-radius:10px;padding:5px 10px;box-sizing:content-box}
-.nav{display:flex;align-items:center;gap:2rem}
-.nav a:not(.btn){font-weight:600;font-size:.92rem;color:#fff;position:relative;transition:.2s}
-.header.scrolled .nav a:not(.btn),.header.open .nav a:not(.btn){color:var(--ink)}
-.nav a:not(.btn)::after{content:"";position:absolute;left:0;bottom:-6px;width:0;height:2px;background:var(--sky-400);transition:.25s}
+/* Sticky OPPO Header */
+.header{position:sticky;top:0;z-index:60;background:rgba(255,255,255,.95);backdrop-filter:blur(16px);border-bottom:1px solid var(--line);transition:.25s}
+.header__inner{display:flex;align-items:center;justify-content:space-between;height:68px;gap:1.5rem}
+.brand{display:flex;align-items:center}
+.brand img{height:28px;width:auto}
+.nav{display:flex;align-items:center;gap:1.85rem}
+.nav a:not(.btn){font-weight:500;font-size:.92rem;color:#121212;position:relative;padding:.4rem 0;transition:.2s}
+.nav a:not(.btn)::after{content:"";position:absolute;left:0;bottom:0;width:0;height:2px;background:#121212;transition:.25s}
 .nav a:not(.btn):hover::after{width:100%}
+.header__actions{display:flex;align-items:center;gap:.75rem}
 .burger{display:none;background:none;border:0;width:40px;height:40px;position:relative;cursor:pointer}
-.burger span{position:absolute;left:8px;right:8px;height:2px;background:#fff;border-radius:2px;transition:.3s}
-.burger span:first-child{top:15px}.burger span:last-child{top:23px}
-.header.scrolled .burger span,.header.open .burger span{background:var(--ink)}
-.header.open .burger span:first-child{top:19px;transform:rotate(45deg)}
-.header.open .burger span:last-child{top:19px;transform:rotate(-45deg)}
+.burger span{position:absolute;left:8px;right:8px;height:2px;background:#121212;border-radius:2px;transition:.3s}
+.burger span:first-child{top:14px}.burger span:last-child{top:23px}
+.header.open .burger span:first-child{top:18.5px;transform:rotate(45deg)}
+.header.open .burger span:last-child{top:18.5px;transform:rotate(-45deg)}
 
-/* Hero */
-.hero{position:relative;min-height:100svh;display:flex;align-items:center;color:#fff;overflow:hidden;padding:120px 0 90px}
-.hero__bg{position:absolute;inset:0;background-size:cover;background-position:center;transform:scale(1.06);animation:zoom 18s ease-out forwards}
-@keyframes zoom{to{transform:scale(1)}}
-.hero__veil{position:absolute;inset:0;background:linear-gradient(100deg,rgba(10,70,130,.88) 0%,rgba(28,127,209,.55) 48%,rgba(28,127,209,.05) 100%),linear-gradient(0deg,rgba(10,50,100,.4),transparent 40%)}
-.hero__inner{position:relative;display:grid;grid-template-columns:1.4fr .8fr;gap:3rem;align-items:end}
-.hero__copy p{font-size:1.15rem;max-width:560px;margin:1.4rem 0 2.2rem;color:#e8f4ff}
-.hero__actions{display:flex;flex-wrap:wrap;gap:1rem}
-.hero__card{background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.35);backdrop-filter:blur(18px);border-radius:var(--radius);padding:1.8rem}
-.hero__card-title{font-size:.78rem;letter-spacing:.16em;text-transform:uppercase;font-weight:700;color:#d6ecff;margin-bottom:1.2rem}
-.hero__stats{display:grid;grid-template-columns:1fr 1fr;gap:1.4rem 1rem}
-.hero__stats b{display:block;font-size:2.1rem;font-weight:800;line-height:1}
-.hero__stats span{font-size:.85rem;color:#d6ecff}
+/* Quick Nav Strip (Mini Product Thumbnails like OPPO Mega Menu) */
+.quick-strip{background:#f7f8fa;border-bottom:1px solid var(--line);padding:.85rem 0;overflow-x:auto}
+.quick-strip__list{display:flex;align-items:center;justify-content:space-between;gap:1.25rem;min-width:max-content}
+.quick-item{display:flex;align-items:center;gap:.75rem;padding:.4rem .85rem;border-radius:14px;transition:.2s;background:#fff;border:1px solid transparent}
+.quick-item:hover{border-color:#d1d5db;transform:translateY(-2px);box-shadow:0 8px 20px -12px rgba(0,0,0,.12)}
+.quick-item img{width:44px;height:44px;object-fit:contain}
+.quick-item div{display:flex;flex-direction:column}
+.quick-item strong{font-size:.84rem;font-weight:600;color:#121212}
+.quick-item span{font-size:.7rem;font-weight:700;color:var(--sky);text-transform:uppercase;letter-spacing:.04em}
 
-/* Strip */
-.strip{background:var(--sky);color:#fff;overflow:hidden}
-.strip__inner{display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:.6rem 1.6rem;padding:1.2rem 0;font-weight:600;font-size:.95rem}
-.strip i{width:6px;height:6px;border-radius:50%;background:rgba(255,255,255,.6)}
+/* Full-Bleed Flagship Hero 1: Find X9 Ultra */
+.flagship-hero{position:relative;min-height:660px;background:#0c0b0a;color:#fff;overflow:hidden;display:flex;align-items:center;padding:4.5rem 0}
+.flagship-hero__bg{position:absolute;inset:0;background-size:cover;background-position:center;opacity:.82;transition:transform 10s ease}
+.flagship-hero:hover .flagship-hero__bg{transform:scale(1.03)}
+.flagship-hero__veil{position:absolute;inset:0;background:linear-gradient(90deg,rgba(10,10,10,.92) 0%,rgba(10,10,10,.65) 48%,rgba(10,10,10,.15) 100%)}
+.flagship-hero__grid{position:relative;z-index:2;display:grid;grid-template-columns:1.1fr .9fr;gap:2.5rem;align-items:center}
+.flagship-badge{display:inline-flex;align-items:center;gap:.5rem;background:rgba(234,88,12,.22);border:1px solid rgba(251,146,60,.55);color:#fdba74;padding:.32rem .9rem;border-radius:999px;font-size:.76rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;margin-bottom:1.1rem}
+.flagship-hero__copy h1{font-size:clamp(2.5rem,5vw,4.3rem);margin-bottom:.6rem}
+.flagship-hero__subtitle{font-size:clamp(1.2rem,2.2vw,1.65rem);font-weight:500;color:#f3f4f6;margin-bottom:1rem}
+.flagship-hero__specs{font-size:.98rem;color:#d1d5db;max-width:540px;margin-bottom:2rem;line-height:1.7}
+.flagship-hero__actions{display:flex;flex-wrap:wrap;gap:.9rem}
+.flagship-hero__phone{display:flex;justify-content:center;align-items:center;position:relative}
+.flagship-hero__phone img{max-height:460px;width:auto;object-fit:contain;filter:drop-shadow(0 28px 50px rgba(0,0,0,.65));animation:floatPhone 5s ease-in-out infinite}
+@keyframes floatPhone{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
 
-/* Sections */
-.section{padding:7rem 0}
-.section--tint{background:linear-gradient(180deg,var(--sky-50),var(--sky-100))}
-.section__head{margin-bottom:3.2rem;max-width:720px}
-.section__head--row{max-width:none;display:flex;justify-content:space-between;align-items:flex-end;gap:2rem;flex-wrap:wrap}
-.section__head--center{text-align:center;margin-inline:auto}
+/* Secondary Hero 2: Interactive Reno16 5G Showcase */
+.reno-showcase{position:relative;overflow:hidden;padding:5rem 0;background:linear-gradient(128deg,#f1f1f8 30%,#dfdef7 95%);transition:background .5s ease}
+.reno-showcase[data-theme="1"]{background:linear-gradient(128deg,#2a1f3d 20%,#4c3575 95%);color:#fff}
+.reno-showcase[data-theme="2"]{background:linear-gradient(128deg,#1e2436 20%,#3b466b 95%);color:#fff}
+.reno-showcase__grid{display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:center}
+.reno-tag{display:inline-block;background:#211b59;color:#fff;padding:.3rem .85rem;border-radius:999px;font-size:.75rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;margin-bottom:1rem}
+.reno-showcase[data-theme="1"] .reno-tag,.reno-showcase[data-theme="2"] .reno-tag{background:rgba(255,255,255,.2)}
+.reno-showcase__copy h2{font-size:clamp(2.2rem,4.4vw,3.6rem);margin-bottom:.5rem}
+.reno-showcase__tagline{font-size:1.35rem;font-weight:600;opacity:.9;margin-bottom:1rem}
+.reno-showcase__desc{font-size:1rem;opacity:.8;max-width:500px;margin-bottom:1.8rem}
+.color-picker{display:flex;align-items:center;gap:.75rem;margin-bottom:2rem;flex-wrap:wrap}
+.color-btn{display:inline-flex;align-items:center;gap:.55rem;padding:.5rem 1rem;border-radius:999px;border:1.5px solid rgba(0,0,0,.15);background:rgba(255,255,255,.75);backdrop-filter:blur(8px);cursor:pointer;font:inherit;font-size:.85rem;font-weight:600;color:#121212;transition:.2s}
+.color-btn.active{border-color:#211b59;background:#fff;box-shadow:0 6px 18px rgba(0,0,0,.1)}
+.color-dot{width:16px;height:16px;border-radius:50%;border:1px solid rgba(0,0,0,.2)}
+.reno-showcase__visual{display:flex;justify-content:center;align-items:center;min-height:420px;position:relative}
+.reno-showcase__visual img{max-height:430px;width:auto;object-fit:contain;transition:opacity .35s ease,transform .35s ease;filter:drop-shadow(0 24px 40px rgba(33,27,89,.18))}
 
-/* About */
-.about__grid{display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:center}
-.about__media{position:relative}
-.about__media img{border-radius:var(--radius);aspect-ratio:4/4.4;object-fit:cover;width:100%;box-shadow:var(--shadow)}
-.about__media::before{content:"";position:absolute;inset:-18px 18px 18px -18px;border:2px solid var(--sky-400);border-radius:var(--radius);z-index:-1;opacity:.5}
-.about__badge{position:absolute;right:-22px;bottom:34px;background:var(--sky);color:#fff;border-radius:18px;padding:1.2rem 1.5rem;display:flex;align-items:center;gap:.9rem;box-shadow:var(--shadow)}
-.about__badge b{font-size:2.4rem;font-weight:800;line-height:1}
-.about__badge span{font-size:.85rem;line-height:1.3}
-.about__copy p{color:var(--muted);margin-top:1.1rem;font-size:1.05rem}
-.about__copy h2{margin-bottom:.4rem}
-.ticks{margin:1.6rem 0 2.2rem;display:grid;gap:.8rem}
-.ticks li{position:relative;padding-left:2rem;font-weight:600}
-.ticks li::before{content:"✓";position:absolute;left:0;top:1px;width:22px;height:22px;border-radius:50%;background:var(--sky-100);color:var(--sky);font-size:.75rem;display:grid;place-items:center;font-weight:800}
+/* Section Commons */
+.section{padding:5.5rem 0}
+.section--tint{background:var(--surface)}
+.section__head{margin-bottom:2.6rem;display:flex;justify-content:space-between;align-items:flex-end;gap:1.5rem;flex-wrap:wrap}
+.section__head--center{text-align:center;flex-direction:column;align-items:center;margin-inline:auto;max-width:720px}
 
-/* Cards */
-.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem}
-.card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:2.1rem;display:flex;flex-direction:column;transition:.3s;position:relative;overflow:hidden}
-.card::after{content:"";position:absolute;left:0;bottom:0;height:4px;width:0;background:linear-gradient(90deg,var(--sky),var(--sky-400));transition:.4s}
-.card:hover{transform:translateY(-8px);box-shadow:var(--shadow);border-color:transparent}
-.card:hover::after{width:100%}
-.card__icon{width:56px;height:56px;border-radius:16px;background:var(--sky-100);display:grid;place-items:center;margin-bottom:1.4rem;transition:.3s}
-.card__icon svg{width:26px;height:26px;stroke:var(--sky);fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;transition:.3s}
-.card:hover .card__icon{background:var(--sky)}
-.card:hover .card__icon svg{stroke:#fff}
-.card p{color:var(--muted);margin:.6rem 0 1.4rem;font-size:.98rem;flex:1}
-.card__link{font-weight:700;color:var(--sky);font-size:.92rem}
+/* Category Filter Tabs */
+.filter-tabs{display:flex;gap:.55rem;flex-wrap:wrap}
+.filter-tab{padding:.55rem 1.2rem;border-radius:999px;border:1px solid var(--line);background:#fff;font:inherit;font-size:.88rem;font-weight:600;color:var(--muted);cursor:pointer;transition:.2s}
+.filter-tab:hover,.filter-tab.active{background:#121212;color:#fff;border-color:#121212}
 
-/* Projects */
-.projects{display:grid;grid-template-columns:1.3fr 1fr;grid-template-rows:1fr 1fr;gap:1.5rem;height:640px}
-.project{position:relative;border-radius:var(--radius);overflow:hidden;color:#fff;display:block}
-.project--lg{grid-row:1/3}
-.project img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .8s}
-.project:hover img{transform:scale(1.07)}
-.project::after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(8,50,95,.88),rgba(8,50,95,.1) 60%)}
-.project__body{position:absolute;z-index:2;left:0;right:0;bottom:0;padding:1.8rem}
-.project__body h3{font-size:1.5rem;margin:.6rem 0 .3rem}
-.project--lg h3{font-size:2rem}
-.project__body p{font-size:.95rem;color:#dcefff;max-width:420px}
-.tag{display:inline-block;background:rgba(255,255,255,.2);backdrop-filter:blur(8px);border:1px solid rgba(255,255,255,.4);padding:.3rem .8rem;border-radius:999px;font-size:.74rem;font-weight:700;letter-spacing:.04em}
+/* OPPO Official Store Product Grid */
+.phone-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem}
+.phone-card{background:var(--surface);border-radius:24px;padding:2rem 1.8rem;display:flex;flex-direction:column;transition:.3s;position:relative;overflow:hidden;border:1px solid transparent}
+.phone-card:hover{background:#fff;border-color:var(--line);box-shadow:var(--shadow);transform:translateY(-6px)}
+.phone-card__top{display:flex;justify-content:space-between;align-items:center;margin-bottom:.5rem;min-height:26px}
+.badge-new{background:var(--sky);color:#fff;font-size:.7rem;font-weight:700;padding:.22rem .65rem;border-radius:999px;text-transform:uppercase;letter-spacing:.05em}
+.badge-hot{background:#ea580c;color:#fff;font-size:.7rem;font-weight:700;padding:.22rem .65rem;border-radius:999px;text-transform:uppercase;letter-spacing:.05em}
+.phone-card__series{font-size:.75rem;font-weight:600;color:var(--muted)}
+.phone-card__img{height:240px;display:flex;align-items:center;justify-content:center;margin:1rem 0 1.4rem}
+.phone-card__img img{max-height:225px;width:auto;object-fit:contain;transition:transform .4s ease}
+.phone-card:hover .phone-card__img img{transform:scale(1.07)}
+.phone-card h3{font-size:1.32rem;margin-bottom:.45rem;color:#121212}
+.phone-card__specs{color:var(--muted);font-size:.9rem;line-height:1.55;margin-bottom:1.2rem;flex:1}
+.phone-card__swatches{display:flex;gap:.45rem;margin-bottom:1.3rem}
+.swatch{width:14px;height:14px;border-radius:50%;border:1px solid rgba(0,0,0,.2)}
+.phone-card__footer{display:flex;align-items:center;justify-content:space-between;gap:.75rem;padding-top:1.1rem;border-top:1px solid rgba(0,0,0,.07)}
+.phone-card__offer{font-size:.8rem;font-weight:600;color:var(--sky)}
+.phone-card__actions{display:flex;gap:.5rem}
+
+/* Bento KSP Feature Highlights (OPPO.com photography) */
+.bento-grid{display:grid;grid-template-columns:1.2fr 1fr;grid-template-rows:300px 300px;gap:1.4rem}
+.bento-item{position:relative;border-radius:24px;overflow:hidden;color:#fff;display:flex;align-items:flex-end;padding:2rem;background:#121212}
+.bento-item--tall{grid-row:1/3}
+.bento-item img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .7s ease}
+.bento-item:hover img{transform:scale(1.06)}
+.bento-item::after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(0,0,0,.82) 0%,rgba(0,0,0,.15) 65%)}
+.bento-item__body{position:relative;z-index:2;max-width:440px}
+.bento-item__body span{display:inline-block;font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:.08em;background:rgba(255,255,255,.2);backdrop-filter:blur(8px);padding:.25rem .75rem;border-radius:999px;margin-bottom:.6rem}
+.bento-item__body h3{font-size:1.55rem;margin-bottom:.35rem}
+.bento-item--tall .bento-item__body h3{font-size:2rem}
+.bento-item__body p{font-size:.92rem;color:rgba(255,255,255,.85)}
+
+/* IoT Ecosystem (Tablets, Audio & Accessories) */
+.iot-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1.25rem}
+.iot-card{background:#fff;border:1px solid var(--line);border-radius:20px;padding:1.5rem;display:flex;flex-direction:column;align-items:center;text-align:center;transition:.3s}
+.iot-card:hover{transform:translateY(-6px);box-shadow:var(--shadow);border-color:transparent}
+.iot-card__img{height:160px;display:flex;align-items:center;justify-content:center;margin-bottom:1rem}
+.iot-card__img img{max-height:145px;width:auto;object-fit:contain;transition:transform .35s ease}
+.iot-card:hover .iot-card__img img{transform:scale(1.08)}
+.iot-card h3{font-size:1.05rem;margin-bottom:.35rem}
+.iot-card p{font-size:.84rem;color:var(--muted);margin-bottom:1.1rem;flex:1}
 
 /* Numbers */
-.numbers{background:linear-gradient(120deg,var(--sky-600),var(--sky) 60%,var(--sky-400));color:#fff;position:relative;overflow:hidden}
-.numbers::before{content:"";position:absolute;width:520px;height:520px;border-radius:50%;background:rgba(255,255,255,.08);right:-120px;top:-260px}
-.numbers__inner{position:relative;display:grid;grid-template-columns:repeat(4,1fr);gap:2rem;padding:4.5rem 0;text-align:center}
-.numbers b{display:block;font-size:clamp(2.6rem,5vw,4rem);font-weight:800;line-height:1}
-.numbers span{display:block;margin-top:.6rem;color:#d6ecff;font-weight:600}
+.numbers{background:#121212;color:#fff;position:relative;overflow:hidden}
+.numbers__inner{display:grid;grid-template-columns:repeat(4,1fr);gap:2rem;padding:4rem 0;text-align:center}
+.numbers b{display:block;font-size:clamp(2.4rem,4.5vw,3.6rem);font-weight:800;line-height:1;color:#6ee7b7}
+.numbers span{display:block;margin-top:.55rem;color:#d1d5db;font-weight:500;font-size:.92rem}
 
-/* Timeline */
-.timeline{display:grid;grid-template-columns:repeat(4,1fr);gap:1.5rem;position:relative}
-.timeline::before{content:"";position:absolute;left:0;right:0;top:27px;height:2px;background:repeating-linear-gradient(90deg,var(--sky-400) 0 8px,transparent 8px 16px)}
-.step{position:relative;padding-top:4.2rem}
-.step::before{content:"";position:absolute;top:18px;left:0;width:20px;height:20px;border-radius:50%;background:#fff;border:5px solid var(--sky);box-shadow:0 0 0 6px var(--sky-100)}
-.step__year{position:absolute;top:0;right:0;font-family:var(--serif);font-size:1.1rem;color:var(--sky);font-weight:600}
-.step h3{margin-bottom:.5rem}
-.step p{color:var(--muted);font-size:.96rem}
+/* Mumbai Stores Timeline / Hubs */
+.timeline{display:grid;grid-template-columns:repeat(4,1fr);gap:1.4rem}
+.step{background:var(--surface);border:1px solid var(--line);border-radius:20px;padding:1.75rem;position:relative;transition:.25s}
+.step:hover{background:#fff;box-shadow:var(--shadow);transform:translateY(-4px)}
+.step__year{display:inline-block;font-size:.74rem;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--sky);background:var(--sky-100);padding:.25rem .7rem;border-radius:999px;margin-bottom:.85rem}
+.step h3{margin-bottom:.45rem;font-size:1.15rem}
+.step p{color:var(--muted);font-size:.9rem}
 
 /* CTA */
-.cta{background:linear-gradient(120deg,var(--sky-600),var(--sky));border-radius:28px;padding:4rem;color:#fff;display:flex;justify-content:space-between;align-items:center;gap:2rem;flex-wrap:wrap;position:relative;overflow:hidden}
-.cta::after{content:"";position:absolute;right:-80px;bottom:-140px;width:380px;height:380px;border-radius:50%;background:rgba(255,255,255,.1)}
-.cta__copy{max-width:560px;position:relative;z-index:1}
-.cta__copy p{margin-top:1rem;color:#e0f0ff}
+.cta{background:linear-gradient(120deg,#0a1912,#006835 60%,#008544);border-radius:28px;padding:3.8rem;color:#fff;display:flex;justify-content:space-between;align-items:center;gap:2rem;flex-wrap:wrap;position:relative;overflow:hidden}
+.cta__copy{max-width:580px;position:relative;z-index:1}
+.cta__copy p{margin-top:.85rem;color:#d8f8e7}
 .cta__actions{display:flex;gap:1rem;flex-wrap:wrap;position:relative;z-index:1}
 
-/* Footer */
-.footer{background:var(--ink);color:#b7c9db;padding-top:5rem}
-.footer__grid{display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr;gap:3rem;padding-bottom:3.5rem}
-.footer__brand img{background:#fff;border-radius:10px;padding:6px 12px;box-sizing:content-box;height:35px;width:auto}
-.footer__brand p{margin-top:1.2rem;max-width:300px;font-size:.95rem}
-.footer h4{color:#fff;font-size:.9rem;letter-spacing:.1em;text-transform:uppercase;margin-bottom:1.1rem}
-.footer a{display:block;margin-bottom:.7rem;font-size:.95rem;transition:.2s}
-.footer a:hover{color:var(--sky-400);transform:translateX(4px)}
-.footer__bottom{display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap;border-top:1px solid rgba(255,255,255,.12);padding:1.5rem 0;font-size:.85rem}
+/* Footer (OPPO Dark Footer Theme) */
+.footer{background:#121212;color:#9ca3af;padding-top:4.5rem}
+.footer__support-bar{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1.5rem;padding-bottom:2.5rem;margin-bottom:2.8rem;border-bottom:1px solid rgba(255,255,255,.1)}
+.support-pill{display:flex;align-items:center;gap:.9rem}
+.support-pill strong{display:block;color:#fff;font-size:1.05rem}
+.support-pill span{font-size:.82rem;color:#9ca3af}
+.footer__grid{display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr;gap:3rem;padding-bottom:3.2rem}
+.footer__brand img{background:#fff;border-radius:8px;padding:6px 12px;box-sizing:content-box;height:28px;width:auto}
+.footer h4{color:#fff;font-size:.88rem;letter-spacing:.08em;text-transform:uppercase;margin-bottom:1.1rem}
+.footer a{display:block;margin-bottom:.65rem;font-size:.92rem;transition:.2s}
+.footer a:hover{color:#fff;transform:translateX(3px)}
+.footer__bottom{display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap;border-top:1px solid rgba(255,255,255,.1);padding:1.5rem 0;font-size:.84rem}
+
+.footer__legal-name{display:block;color:#fff;font-weight:700;letter-spacing:.02em;margin-top:.7rem;font-size:.9rem}
+.footer__brand-note{display:block;color:#cbd5e1;font-size:.78rem;margin-top:.3rem;line-height:1.4;opacity:.9}
+.footer__gstin{display:inline-block;background:rgba(0,133,68,.24);color:#b9f8d6;border:1px solid rgba(30,199,115,.45);border-radius:6px;padding:.15rem .55rem;font-size:.78rem;font-weight:600;margin-top:.4rem;letter-spacing:.05em}
+.footer__address{margin-top:.6rem;font-size:.84rem;color:#9ca3af;line-height:1.55;max-width:320px}
 
 /* Reveal */
-.reveal{opacity:0;transform:translateY(34px);transition:opacity .8s ease var(--d,0s),transform .8s ease var(--d,0s)}
+.reveal{opacity:0;transform:translateY(28px);transition:opacity .7s ease var(--d,0s),transform .7s ease var(--d,0s)}
 .reveal.in{opacity:1;transform:none}
-@media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}.hero__bg{animation:none;transform:none}}
+@media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}}
 
-/* Responsive */
-@media (max-width:980px){
-  .burger{display:block}
-  .nav{position:absolute;top:76px;left:0;right:0;flex-direction:column;align-items:flex-start;gap:0;background:#fff;padding:1rem 4%;max-height:0;overflow:hidden;opacity:0;transition:.3s;box-shadow:0 20px 30px -20px rgba(0,0,0,.2)}
-  .header.open .nav{max-height:460px;opacity:1;padding:1rem 4% 1.6rem}
-  .nav a:not(.btn){color:var(--ink);padding:.8rem 0;width:100%}
-  .nav__cta{margin-top:.6rem}
-  .hero__inner,.about__grid{grid-template-columns:1fr}
-  .about__grid{gap:3rem}
-  .about__badge{right:12px}
-  .cards{grid-template-columns:1fr 1fr}
-  .projects{grid-template-columns:1fr;grid-template-rows:none;height:auto}
-  .project{height:340px}.project--lg{grid-row:auto;height:420px}
-  .numbers__inner{grid-template-columns:1fr 1fr}
-  .timeline{grid-template-columns:1fr 1fr;row-gap:2.5rem}
-  .timeline::before{display:none}
-  .footer__grid{grid-template-columns:1fr 1fr}
-  .cta{padding:2.6rem 1.8rem}
-}
-@media (max-width:620px){
-  .section{padding:4.5rem 0}
-  .cards,.timeline{grid-template-columns:1fr}
-  .footer__grid{grid-template-columns:1fr}
-}
-
-/* ===== Inner pages ===== */
-.page-hero{background:linear-gradient(120deg,var(--sky-600),var(--sky) 60%,var(--sky-400));color:#fff;padding:150px 0 80px;position:relative;overflow:hidden}
-.page-hero::after{content:"";position:absolute;right:-100px;bottom:-200px;width:460px;height:460px;border-radius:50%;background:rgba(255,255,255,.1)}
+/* Inner pages (Contact, Privacy, Terms) */
+.page-hero{background:linear-gradient(120deg,#0a1912,#006835 60%,#008544);color:#fff;padding:90px 0 70px;position:relative;overflow:hidden}
 .page-hero .container{position:relative;z-index:1}
-.page-hero h1{font-size:clamp(2.2rem,4.6vw,3.6rem)}
-.page-hero p{margin-top:1rem;color:#e0f0ff;font-size:1.1rem;max-width:560px}
-.page-hero em{color:#bfe3ff}
-.btn--lg{padding:1.1rem 2rem;font-size:1rem}
+.page-hero h1{font-size:clamp(2.2rem,4.4vw,3.4rem)}
+.page-hero p{margin-top:.85rem;color:#d8f8e7;font-size:1.08rem;max-width:580px}
+.page-hero em{color:#8ef5c0}
 .inl{display:inline!important;margin:0!important}
 
-/* Contact */
 .contact__grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:4rem;align-items:start}
 .contact__info h2{font-size:2rem;margin-bottom:2rem}
 .info{display:flex;gap:1rem;margin-bottom:1.8rem}
@@ -214,17 +237,16 @@ em{font-family:var(--serif);font-style:italic;font-weight:500;color:var(--sky)}
 .row{display:grid;grid-template-columns:1fr 1fr;gap:1.3rem}
 .field{display:grid;gap:.45rem}
 .field span{font-size:.85rem;font-weight:700}
-.field input,.field select,.field textarea{font:inherit;color:var(--ink);background:var(--sky-50);border:1.5px solid var(--line);border-radius:12px;padding:.85rem 1rem;transition:.2s;width:100%}
+.field input,.field select,.field textarea{font:inherit;color:var(--ink);background:var(--surface);border:1.5px solid var(--line);border-radius:12px;padding:.85rem 1rem;transition:.2s;width:100%}
 .field textarea{resize:vertical}
-.field input:focus,.field select:focus,.field textarea:focus{outline:0;border-color:var(--sky);background:#fff;box-shadow:0 0 0 4px rgba(28,127,209,.15)}
+.field input:focus,.field select:focus,.field textarea:focus{outline:0;border-color:var(--sky);background:#fff;box-shadow:0 0 0 4px rgba(0,133,68,.12)}
 .field.invalid input,.field.invalid select,.field.invalid textarea{border-color:#d64545}
-.optin{display:grid;gap:1rem;background:var(--sky-50);border:1px solid var(--line);border-radius:14px;padding:1.2rem 1.3rem}
+.optin{display:grid;gap:1rem;background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:1.2rem 1.3rem}
 .check{display:flex;gap:.8rem;align-items:flex-start;cursor:pointer;font-size:.9rem;color:var(--muted);line-height:1.55}
 .check input{position:absolute;opacity:0;pointer-events:none}
-.check i{flex:none;width:22px;height:22px;border-radius:7px;border:2px solid var(--sky-400);background:#fff;margin-top:1px;transition:.2s;display:grid;place-items:center}
+.check i{flex:none;width:22px;height:22px;border-radius:7px;border:2px solid var(--sky);background:#fff;margin-top:1px;transition:.2s;display:grid;place-items:center}
 .check input:checked+i{background:var(--sky);border-color:var(--sky)}
 .check input:checked+i::after{content:"✓";color:#fff;font-size:.8rem;font-weight:800}
-.check input:focus-visible+i{box-shadow:0 0 0 4px rgba(28,127,209,.25)}
 .check.invalid i{border-color:#d64545}
 .check a{color:var(--sky);font-weight:700;text-decoration:underline}
 .opt{font-family:inherit;font-style:normal;font-weight:600;color:var(--ink);font-size:.8rem}
@@ -233,9 +255,8 @@ em{font-family:var(--serif);font-style:italic;font-weight:500;color:var(--sky)}
 .success__icon{width:72px;height:72px;border-radius:50%;background:var(--sky);color:#fff;font-size:2rem;display:grid;place-items:center;margin:0 auto 1.4rem;box-shadow:var(--shadow)}
 .success p{color:var(--muted);margin:.6rem 0 1.8rem}
 
-/* Legal */
 .legal__grid{display:grid;grid-template-columns:260px 1fr;gap:4rem;align-items:start}
-.toc{position:sticky;top:100px;display:grid;gap:.2rem;padding:1.4rem;background:var(--sky-50);border:1px solid var(--line);border-radius:16px}
+.toc{position:sticky;top:100px;display:grid;gap:.2rem;padding:1.4rem;background:var(--surface);border:1px solid var(--line);border-radius:16px}
 .toc b{font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;color:var(--sky);margin-bottom:.6rem}
 .toc a{font-size:.9rem;padding:.35rem 0;color:var(--muted);font-weight:600;transition:.2s}
 .toc a:hover{color:var(--sky);transform:translateX(4px)}
@@ -247,14 +268,23 @@ em{font-family:var(--serif);font-style:italic;font-weight:500;color:var(--sky)}
 .prose a{color:var(--sky);font-weight:700;text-decoration:underline}
 .prose strong{color:var(--ink)}
 
-@media (max-width:980px){
-  .contact__grid,.legal__grid{grid-template-columns:1fr;gap:2.5rem}
+/* Responsive */
+@media (max-width:1024px){
+  .burger{display:block}
+  .nav{position:absolute;top:68px;left:0;right:0;flex-direction:column;align-items:flex-start;gap:0;background:#fff;padding:0 4%;max-height:0;overflow:hidden;opacity:0;transition:.3s;border-bottom:1px solid var(--line)}
+  .header.open .nav{max-height:460px;opacity:1;padding:1rem 4% 1.5rem}
+  .nav a:not(.btn){padding:.75rem 0;width:100%}
+  .flagship-hero__grid,.reno-showcase__grid,.contact__grid,.legal__grid{grid-template-columns:1fr}
+  .phone-grid{grid-template-columns:repeat(2,1fr)}
+  .iot-grid{grid-template-columns:repeat(2,1fr)}
+  .bento-grid{grid-template-columns:1fr;grid-template-rows:none}
+  .bento-item,.bento-item--tall{grid-row:auto;height:340px}
+  .numbers__inner,.timeline,.footer__grid{grid-template-columns:1fr 1fr}
   .toc{position:static}
-  .row{grid-template-columns:1fr}
-  .form-wrap{padding:1.6rem}
 }
-
-.footer__legal-name{display:block;color:#fff;font-weight:700;letter-spacing:.02em;margin-top:.4rem;font-size:.88rem}
-.footer__brand-note{display:block;color:#cbd5e1;font-size:.78rem;margin-top:.35rem;line-height:1.4;opacity:.9}
-.footer__gstin{display:inline-block;background:rgba(28,127,209,.18);color:#d6ecff;border:1px solid rgba(28,127,209,.4);border-radius:6px;padding:.15rem .55rem;font-size:.78rem;font-weight:600;margin-top:.35rem;letter-spacing:.05em}
-.footer__address{margin-top:.6rem;font-size:.84rem;color:#94a9bf;line-height:1.5;max-width:320px}
+@media (max-width:640px){
+  .section{padding:4rem 0}
+  .phone-grid,.iot-grid,.timeline,.footer__grid,.row{grid-template-columns:1fr}
+  .cta{padding:2.4rem 1.6rem}
+  .form-wrap{padding:1.5rem}
+}

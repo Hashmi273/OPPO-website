@@ -3,183 +3,424 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Shapoorji Pallonji Group | Engineering, Infrastructure & Real Estate</title>
-  <meta name="description" content="Shapoorji Pallonji Group — one of India's leading conglomerates, delivering landmark projects across Engineering & Construction, Infrastructure, Energy, Real Estate, Water and Financial Services for over 150 years." />
-  <link rel="icon" href="assets/logo.png" />
+  <meta name="referrer" content="no-referrer" />
+  <title>OPPO Official Site | OPPO Mumbai Smartphones, Tablets, Audio &amp; Stores</title>
+  <meta name="description" content="Explore the all-new OPPO Find X9 Ultra, OPPO Reno16 5G, OPPO F35 Pro 5G, OPPO Pad 5, Enco Air5 and visit authorized OPPO Experience Stores &amp; Service Centers across Mumbai." />
+  <link rel="icon" href="assets/oppo-logo.svg" type="image/svg+xml" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Fraunces:opsz,wght@9..144,500;9..144,600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
-  <!-- HEADER -->
-  <header class="header" id="header">
+  <!-- TOP NOTICE BAR (OPPO.com/in style) -->
+  <div class="notice-bar">
+    <div class="container notice-bar__inner">
+      <span>All-new <strong>OPPO Find X9 Ultra</strong> &amp; <strong>Reno16 5G Series</strong> Available Now at OPPO Mumbai Stores</span>
+      <a href="contact.html">Book In-Store Demo / Pre-Book Now &gt;&gt;</a>
+    </div>
+  </div>
+
+  <!-- STICKY HEADER -->
+  <header class="header" id="header" data-solid>
     <div class="container header__inner">
-      <a href="#top" class="brand" aria-label="Shapoorji Pallonji home">
-        <img src="assets/logo.png" alt="Shapoorji Pallonji" width="182" height="35" />
+      <a href="#top" class="brand" aria-label="OPPO Mumbai home">
+        <img src="assets/oppo-logo.svg" alt="OPPO Mumbai" width="160" height="28" />
       </a>
       <nav class="nav" id="nav" aria-label="Main">
-        <a href="#about">About</a>
-        <a href="#businesses">Businesses</a>
-        <a href="#projects">Projects</a>
-        <a href="#legacy">Legacy</a>
-        <a href="#board">Board</a>
-        <a href="contact.html" class="btn btn--primary btn--sm nav__cta">Contact us</a>
+        <a href="#smartphones">Smartphones</a>
+        <a href="#reno-spotlight">Reno16 Series</a>
+        <a href="#features">Hasselblad &amp; AI</a>
+        <a href="#iot">Tablets &amp; Audio</a>
+        <a href="#stores">Mumbai Stores</a>
+        <a href="contact.html" class="btn btn--green btn--sm nav__cta">Store / Service Enquiry</a>
       </nav>
       <button class="burger" id="burger" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span></button>
     </div>
   </header>
 
+  <!-- QUICK PRODUCT MEGA STRIP -->
+  <div class="quick-strip" aria-label="Featured OPPO Smartphones">
+    <div class="container quick-strip__list">
+      <a href="#smartphones" class="quick-item">
+        <img src="https://www.oppo.com/content/dam/oppo_com/common/mkt/v2-2/find-x9-ultra-x9s-en/find-x9-ultra/navigation/440-440-brown.png" alt="OPPO Find X9 Ultra" />
+        <div><span>Flagship</span><strong>OPPO Find X9 Ultra</strong></div>
+      </a>
+      <a href="#smartphones" class="quick-item">
+        <img src="https://www.oppo.com/content/dam/oppo_com/common/mkt/v2-2/find-x9-ultra-x9s-en/find-x9s/navigation/440-440-orange.png" alt="OPPO Find X9s" />
+        <div><span>Flagship</span><strong>OPPO Find X9s</strong></div>
+      </a>
+      <a href="#reno-spotlight" class="quick-item">
+        <img src="https://www.oppo.com/content/dam/oppo_com/common/mkt/v2-2/oppo-reno16-series-en/navigation/reno16/440-440-white.png" alt="OPPO Reno16 5G" />
+        <div><span>AI Portrait</span><strong>OPPO Reno16 5G</strong></div>
+      </a>
+      <a href="#smartphones" class="quick-item">
+        <img src="https://www.oppo.com/content/dam/oppo_com/common/mkt/v2-2/f35-pro-in/navigation/440-440-orange.png" alt="OPPO F35 Pro 5G" />
+        <div><span>New</span><strong>OPPO F35 Pro 5G</strong></div>
+      </a>
+      <a href="#smartphones" class="quick-item">
+        <img src="https://www.oppo.com/content/dam/oppo_com/common/mkt/v2-2/oppo-a7-pro-serice-en/navigation/a7-pro/440-440-blue.png" alt="OPPO F35 5G" />
+        <div><span>New</span><strong>OPPO F35 5G</strong></div>
+      </a>
+      <a href="#iot" class="quick-item">
+        <img src="https://www.oppo.com/content/dam/oppo_com/common/mkt/v2-2/oppo-pad-5-in/navigation/440-440-black-v2.png" alt="OPPO Pad 5" />
+        <div><span>New Tablet</span><strong>OPPO Pad 5</strong></div>
+      </a>
+    </div>
+  </div>
+
   <main id="top">
 
-    <!-- HERO -->
-    <section class="hero">
-      <div class="hero__bg" style="background-image:url('assets/hero.jpg')"></div>
-      <div class="hero__veil"></div>
-      <div class="container hero__inner">
-        <div class="hero__copy reveal">
-          <span class="eyebrow eyebrow--light"><i></i> Since 1865</span>
-          <h1>Building India's <em>skyline</em> &amp; the world's future.</h1>
-          <p>A globally diversified group delivering challenging projects in 40+ countries for over 150 years — from iconic landmarks to critical infrastructure.</p>
-          <div class="hero__actions">
-            <a href="#businesses" class="btn btn--white">Explore businesses <span aria-hidden="true">→</span></a>
-            <a href="#projects" class="btn btn--ghost">View projects</a>
+    <!-- HERO 1: OPPO FIND X9 ULTRA (OFFICIAL OPPO INDIA FLAGSHIP) -->
+    <section class="flagship-hero">
+      <div class="flagship-hero__bg" style="background-image:url('https://www.oppo.com/content/dam/oppo_com/oppo/product-asset-library/find-x/find-x9-ultra-x9s-en/find-x9-ultra/brown-orange/in/v1/assets/videos-design-0-pc-cover-1-1e160b.jpg.webp')"></div>
+      <div class="flagship-hero__veil"></div>
+      <div class="container flagship-hero__grid">
+        <div class="flagship-hero__copy reveal">
+          <span class="flagship-badge">Co-Developed with Hasselblad &bull; Mumbai Exclusive</span>
+          <h1>OPPO Find X9 Ultra</h1>
+          <p class="flagship-hero__subtitle">Feels like a Hasselblad. An Icon, Evolved.</p>
+          <p class="flagship-hero__specs">
+            Hasselblad 50MP 10x Optical Telephoto &bull; Dual Hasselblad 200MP Camera System &bull; 8K 30fps Ultra-Clear Video &bull; Inspired by the X2D 100C Earth Explorer Edition.
+          </p>
+          <div class="flagship-hero__actions">
+            <a href="contact.html" class="btn btn--white btn--lg">Buy / Enquire in Mumbai <span aria-hidden="true">→</span></a>
+            <a href="#smartphones" class="btn btn--ghost btn--lg">Explore All Phones</a>
           </div>
         </div>
-
-        <aside class="hero__card reveal" style="--d:.15s">
-          <p class="hero__card-title">At a glance</p>
-          <div class="hero__stats">
-            <div><b data-count="150" data-suffix="+">0</b><span>Years of legacy</span></div>
-            <div><b data-count="60000" data-suffix="+">0</b><span>People</span></div>
-            <div><b data-count="40" data-suffix="+">0</b><span>Countries</span></div>
-            <div><b data-count="13">0</b><span>Group companies</span></div>
-          </div>
-        </aside>
-      </div>
-    </section>
-
-    <!-- SECTORS STRIP -->
-    <section class="strip">
-      <div class="container strip__inner">
-        <span>Engineering &amp; Construction</span><i></i>
-        <span>Infrastructure</span><i></i>
-        <span>Energy</span><i></i>
-        <span>Real Estate</span><i></i>
-        <span>Water</span><i></i>
-        <span>Financial Services</span>
-      </div>
-    </section>
-
-    <!-- ABOUT -->
-    <section class="section about" id="about">
-      <div class="container about__grid">
-        <div class="about__media reveal">
-          <img src="assets/convention.jpg" alt="Landmark convention centre built by the Group" loading="lazy" />
-          <div class="about__badge">
-            <b>160+</b><span>years of<br />trust &amp; craft</span>
-          </div>
-        </div>
-        <div class="about__copy reveal" style="--d:.1s">
-          <span class="eyebrow"><i></i> Who we are</span>
-          <h2>A legacy built on <em>integrity</em>, engineered for tomorrow.</h2>
-          <p>Shapoorji Pallonji Group is one of India's leading conglomerates, with diversified businesses in Engineering &amp; Construction, Infrastructure, Energy, Real Estate, Water and Financial Services.</p>
-          <p>We operate across 6 major business areas with 13 group companies and 3 divisions, powered by a workforce of over 60,000 people from 40+ nationalities.</p>
-          <ul class="ticks">
-            <li>Trusted partner for governments &amp; global corporates</li>
-            <li>Iconic landmarks across five continents</li>
-            <li>Commitment to safety, quality &amp; sustainability</li>
-          </ul>
-          <a href="#legacy" class="btn btn--primary">Our story <span aria-hidden="true">→</span></a>
+        <div class="flagship-hero__phone reveal" style="--d:.12s">
+          <img src="https://www.oppo.com/content/dam/oppo_com/common/mkt/v2-2/find-x9-ultra-x9s-en/find-x9-ultra/navigation/440-440-brown.png" alt="OPPO Find X9 Ultra Tundra Umber" />
         </div>
       </div>
     </section>
 
-    <!-- BUSINESSES -->
-    <section class="section section--tint" id="businesses">
+    <!-- HERO 2: OPPO RENO16 5G INTERACTIVE COLOR SHOWCASE (FROM OPPO.COM/IN) -->
+    <section class="reno-showcase" id="reno-spotlight" data-theme="0">
+      <div class="container reno-showcase__grid">
+        <div class="reno-showcase__copy reveal">
+          <span class="reno-tag">India's First HoloVerse 3D Design</span>
+          <h2>OPPO Reno16 5G</h2>
+          <p class="reno-showcase__tagline">Summer Looks. Star Vibes.</p>
+          <p class="reno-showcase__desc" id="renoDesc">
+            AI Remix Collage | 50MP 3.5x Telephoto Portrait Camera | Smart &amp; Smooth ColorOS 16. Fresh, versatile Starry White finish with 3D Pop Planet Design.
+          </p>
+
+          <div class="color-picker" role="group" aria-label="Select OPPO Reno16 5G Color">
+            <button type="button" class="color-btn active" data-reno-color="0" data-img="https://www.oppo.com/content/dam/oppo_com/oppo/product-asset-library/reno/reno16-series/in/reno16/white-purple-violet/v1/assets/images-color-s3-in-phone-0-1-e404d9.png.webp" data-desc="AI Remix Collage | 50MP 3.5x Telephoto Portrait Camera | Smart & Smooth ColorOS 16. Fresh, versatile Starry White finish with 3D Pop Planet Design.">
+              <span class="color-dot" style="background:linear-gradient(135deg,#ffffff,#dcdcf2)"></span> Starry White
+            </button>
+            <button type="button" class="color-btn" data-reno-color="1" data-img="https://www.oppo.com/content/dam/oppo_com/oppo/product-asset-library/reno/reno16-series/in/reno16/white-purple-violet/v1/assets/images-color-s3-in-phone-1-1-3b2531.png.webp" data-desc="Soft yet striking, dreamy yet bold. Stellar Purple blends sweetness with strength — reflective, expressive, and powered by OPPO AI Portrait Camera.">
+              <span class="color-dot" style="background:linear-gradient(135deg,#c084fc,#6b21a8)"></span> Stellar Purple
+            </button>
+            <button type="button" class="color-btn" data-reno-color="2" data-img="https://www.oppo.com/content/dam/oppo_com/oppo/product-asset-library/reno/reno16-series/in/reno16/white-purple-violet/v1/assets/images-color-s3-in-phone-2-1-31d657.png.webp" data-desc="High-street chic with an edgy twist. Twilight Violet shines with a cool, versatile glow — capturing the quiet confidence of twilight.">
+              <span class="color-dot" style="background:linear-gradient(135deg,#818cf8,#312e81)"></span> Twilight Violet
+            </button>
+          </div>
+
+          <div class="flagship-hero__actions">
+            <a href="contact.html" class="btn btn--primary btn--lg">Experience at Mumbai Store →</a>
+            <a href="#smartphones" class="btn btn--outline btn--lg">Compare Reno Series</a>
+          </div>
+        </div>
+
+        <div class="reno-showcase__visual reveal" style="--d:.1s">
+          <img id="renoPhoneImg" src="https://www.oppo.com/content/dam/oppo_com/oppo/product-asset-library/reno/reno16-series/in/reno16/white-purple-violet/v1/assets/images-color-s3-in-phone-0-1-e404d9.png.webp" alt="OPPO Reno16 5G Starry White" />
+        </div>
+      </div>
+    </section>
+
+    <!-- LATEST SMARTPHONES CATALOG (OFFICIAL OPPO.COM/IN LINEUP) -->
+    <section class="section" id="smartphones">
       <div class="container">
         <div class="section__head reveal">
-          <span class="eyebrow"><i></i> Our businesses</span>
-          <h2>Six businesses. One standard of <em>excellence</em>.</h2>
+          <div>
+            <span class="eyebrow"><i></i> Latest Smartphone Models</span>
+            <h2>Find your new <em>OPPO Smartphone</em>.</h2>
+          </div>
+          <div class="filter-tabs" role="tablist" aria-label="Filter Smartphones by Series">
+            <button type="button" class="filter-tab active" data-filter="all">All Models</button>
+            <button type="button" class="filter-tab" data-filter="find">Find X Series</button>
+            <button type="button" class="filter-tab" data-filter="reno">Reno Series</button>
+            <button type="button" class="filter-tab" data-filter="f-series">F Series</button>
+          </div>
         </div>
 
-        <div class="cards">
-          <a href="#" class="card reveal">
-            <span class="card__icon"><svg viewBox="0 0 24 24"><path d="M3 21h18M5 21V9l7-5 7 5v12M9 21v-6h6v6"/></svg></span>
-            <h3>Engineering &amp; Construction</h3>
-            <p>Iconic civil and structural engineering landmarks around the world.</p>
-            <span class="card__link">Learn more →</span>
+        <div class="phone-grid" id="phoneGrid">
+          <!-- 1. OPPO Find X9 Ultra -->
+          <article class="phone-card reveal" data-category="find">
+            <div class="phone-card__top">
+              <span class="badge-hot">Flagship</span>
+              <span class="phone-card__series">Find X Series</span>
+            </div>
+            <div class="phone-card__img">
+              <img src="https://www.oppo.com/content/dam/oppo_com/common/mkt/v2-2/find-x9-ultra-x9s-en/find-x9-ultra/navigation/440-440-brown.png" alt="OPPO Find X9 Ultra" loading="lazy" />
+            </div>
+            <h3>OPPO Find X9 Ultra</h3>
+            <p class="phone-card__specs">Hasselblad 50MP 10x Optical Telephoto | Dual Hasselblad 200MP Camera System | 8K 30fps Ultra-Clear Video</p>
+            <div class="phone-card__swatches" aria-label="Available finishes">
+              <span class="swatch" style="background:#5c4033" title="Tundra Umber"></span>
+              <span class="swatch" style="background:#1c1917" title="Obsidian Black"></span>
+            </div>
+            <div class="phone-card__footer">
+              <span class="phone-card__offer">No-Cost EMI &amp; Exchange Bonus</span>
+              <div class="phone-card__actions">
+                <a href="contact.html" class="btn btn--primary btn--sm">Buy / Enquire</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 2. OPPO Find X9s -->
+          <article class="phone-card reveal" style="--d:.05s" data-category="find">
+            <div class="phone-card__top">
+              <span class="badge-new">New</span>
+              <span class="phone-card__series">Find X Series</span>
+            </div>
+            <div class="phone-card__img">
+              <img src="https://www.oppo.com/content/dam/oppo_com/common/mkt/v2-2/find-x9-ultra-x9s-en/find-x9s/navigation/440-440-orange.png" alt="OPPO Find X9s" loading="lazy" />
+            </div>
+            <h3>OPPO Find X9s</h3>
+            <p class="phone-card__specs">50MP Triple Camera System | Trinity Engine x MediaTek Dimensity 9500s | Massive 7025mAh Battery</p>
+            <div class="phone-card__swatches">
+              <span class="swatch" style="background:#ea580c" title="Sunset Orange"></span>
+              <span class="swatch" style="background:#27272a" title="Titanium Grey"></span>
+            </div>
+            <div class="phone-card__footer">
+              <span class="phone-card__offer">Instant Mumbai Store Pickup</span>
+              <div class="phone-card__actions">
+                <a href="contact.html" class="btn btn--primary btn--sm">Buy / Enquire</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 3. OPPO Reno16 5G -->
+          <article class="phone-card reveal" style="--d:.1s" data-category="reno">
+            <div class="phone-card__top">
+              <span class="badge-hot">Bestseller</span>
+              <span class="phone-card__series">Reno Series</span>
+            </div>
+            <div class="phone-card__img">
+              <img src="https://www.oppo.com/content/dam/oppo_com/common/mkt/v2-2/oppo-reno16-series-en/navigation/reno16/440-440-white.png" alt="OPPO Reno16 5G" loading="lazy" />
+            </div>
+            <h3>OPPO Reno16 5G</h3>
+            <p class="phone-card__specs">AI Remix Collage | 50MP 3.5x Telephoto Camera | HoloVerse 3D Pop Planet Design | Smart &amp; Smooth ColorOS 16</p>
+            <div class="phone-card__swatches">
+              <span class="swatch" style="background:#f8fafc" title="Starry White"></span>
+              <span class="swatch" style="background:#a855f7" title="Stellar Purple"></span>
+              <span class="swatch" style="background:#4f46e5" title="Twilight Violet"></span>
+            </div>
+            <div class="phone-card__footer">
+              <span class="phone-card__offer">Zero Down Payment EMI</span>
+              <div class="phone-card__actions">
+                <a href="contact.html" class="btn btn--primary btn--sm">Buy / Enquire</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 4. OPPO Reno16c 5G -->
+          <article class="phone-card reveal" data-category="reno">
+            <div class="phone-card__top">
+              <span class="badge-new">New</span>
+              <span class="phone-card__series">Reno Series</span>
+            </div>
+            <div class="phone-card__img">
+              <img src="https://www.oppo.com/content/dam/oppo_com/common/mkt/v2-2/oppo-reno16-series-en/navigation/reno16-f/440-440-white.png" alt="OPPO Reno16c 5G" loading="lazy" />
+            </div>
+            <h3>OPPO Reno16c 5G</h3>
+            <p class="phone-card__specs">AI Portrait Expert | 50MP 3.5x Telephoto Camera | Smart &amp; Smooth ColorOS 16 | 80W SUPERVOOC Flash Charge</p>
+            <div class="phone-card__swatches">
+              <span class="swatch" style="background:#f1f5f9" title="Pearl White"></span>
+              <span class="swatch" style="background:#1e293b" title="Midnight Blue"></span>
+            </div>
+            <div class="phone-card__footer">
+              <span class="phone-card__offer">Exchange Bonus Available</span>
+              <div class="phone-card__actions">
+                <a href="contact.html" class="btn btn--primary btn--sm">Buy / Enquire</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 5. OPPO F35 Pro 5G -->
+          <article class="phone-card reveal" style="--d:.05s" data-category="f-series">
+            <div class="phone-card__top">
+              <span class="badge-new">New</span>
+              <span class="phone-card__series">F Series</span>
+            </div>
+            <div class="phone-card__img">
+              <img src="https://www.oppo.com/content/dam/oppo_com/common/mkt/v2-2/f35-pro-in/navigation/440-440-orange.png" alt="OPPO F35 Pro 5G" loading="lazy" />
+            </div>
+            <h3>OPPO F35 Pro 5G</h3>
+            <p class="phone-card__specs">Group Selfie Expert | Ultra-Wide AI Group Portrait | IP69 Water &amp; Dust Resistance | 360&deg; Armour Body</p>
+            <div class="phone-card__swatches">
+              <span class="swatch" style="background:#f97316" title="Coral Orange"></span>
+              <span class="swatch" style="background:#065f46" title="Emerald Green"></span>
+            </div>
+            <div class="phone-card__footer">
+              <span class="phone-card__offer">Free Screen Protection Offer</span>
+              <div class="phone-card__actions">
+                <a href="contact.html" class="btn btn--primary btn--sm">Buy / Enquire</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 6. OPPO F35 5G -->
+          <article class="phone-card reveal" style="--d:.1s" data-category="f-series">
+            <div class="phone-card__top">
+              <span class="badge-new">New</span>
+              <span class="phone-card__series">F Series</span>
+            </div>
+            <div class="phone-card__img">
+              <img src="https://www.oppo.com/content/dam/oppo_com/common/mkt/v2-2/oppo-a7-pro-serice-en/navigation/a7-pro/440-440-blue.png" alt="OPPO F35 5G" loading="lazy" />
+            </div>
+            <h3>OPPO F35 5G</h3>
+            <p class="phone-card__specs">Group Selfie Expert | Durable Champion Build | 120Hz Ultra-Bright AMOLED Display | All-Day Fast Charge</p>
+            <div class="phone-card__swatches">
+              <span class="swatch" style="background:#38bdf8" title="Ocean Blue"></span>
+              <span class="swatch" style="background:#18181b" title="Starry Black"></span>
+            </div>
+            <div class="phone-card__footer">
+              <span class="phone-card__offer">Easy Monthly Installments</span>
+              <div class="phone-card__actions">
+                <a href="contact.html" class="btn btn--primary btn--sm">Buy / Enquire</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- BENTO FEATURE HIGHLIGHTS (OFFICIAL OPPO.COM/IN IMAGERY) -->
+    <section class="section section--tint" id="features">
+      <div class="container">
+        <div class="section__head reveal">
+          <div>
+            <span class="eyebrow"><i></i> OPPO Imaging &amp; Craftsmanship</span>
+            <h2>Engineered for <em>masterpieces</em>.</h2>
+          </div>
+          <a href="contact.html" class="btn btn--outline">Book Live Camera Demo in Mumbai →</a>
+        </div>
+
+        <div class="bento-grid">
+          <a href="contact.html" class="bento-item bento-item--tall reveal">
+            <img src="https://www.oppo.com/content/dam/oppo_com/oppo/product-asset-library/find-x/find-x9-ultra-x9s-en/find-x9-ultra/brown-orange/in/v1/assets/images-design-p1-1-1-7d553c.jpg.webp" alt="Master Lens Design Find X9 Ultra" loading="lazy" />
+            <div class="bento-item__body">
+              <span>Find X9 Ultra &bull; Hasselblad</span>
+              <h3>Master Lens Design</h3>
+              <p>One lens to master every light. Inspired by classic Hasselblad tactile focus rings and six-blade aperture geometry.</p>
+            </div>
           </a>
-          <a href="#" class="card reveal" style="--d:.06s">
-            <span class="card__icon"><svg viewBox="0 0 24 24"><path d="M2 18c4-8 8-8 10 0 2-8 6-8 10 0M2 21h20M7 8V4m10 4V4"/></svg></span>
-            <h3>Infrastructure</h3>
-            <p>Roads, bridges, tunnels, ports and transit systems that connect nations.</p>
-            <span class="card__link">Learn more →</span>
+
+          <a href="contact.html" class="bento-item reveal" style="--d:.06s">
+            <img src="https://www.oppo.com/content/dam/oppo_com/oppo/product-asset-library/reno/reno16-series/in/reno16/white-purple-violet/v1/assets/images-ksp-s3-in-img-1-1-9a1022.jpg.webp" alt="Trendsetting AI Camera Reno16 5G" loading="lazy" />
+            <div class="bento-item__body">
+              <span>Reno16 5G Series</span>
+              <h3>Trendsetting AI Portrait Camera</h3>
+              <p>50MP 3.5x Telephoto Portrait &amp; AI Remix Collage for studio-grade portraits in every lighting condition.</p>
+            </div>
           </a>
-          <a href="#" class="card reveal" style="--d:.12s">
-            <span class="card__icon"><svg viewBox="0 0 24 24"><path d="M13 2 4 14h7l-1 8 9-12h-7z"/></svg></span>
-            <h3>Energy</h3>
-            <p>Solar, oil &amp; gas and power solutions for a cleaner energy future.</p>
-            <span class="card__link">Learn more →</span>
-          </a>
-          <a href="#" class="card reveal">
-            <span class="card__icon"><svg viewBox="0 0 24 24"><path d="M4 21V5l8-3v19M12 9l8 3v9M2 21h20M8 8h.01M8 12h.01M8 16h.01"/></svg></span>
-            <h3>Real Estate</h3>
-            <p>Residential, commercial and retail developments that shape cities.</p>
-            <span class="card__link">Learn more →</span>
-          </a>
-          <a href="#" class="card reveal" style="--d:.06s">
-            <span class="card__icon"><svg viewBox="0 0 24 24"><path d="M12 3s6 6.5 6 11a6 6 0 0 1-12 0c0-4.5 6-11 6-11z"/></svg></span>
-            <h3>Water</h3>
-            <p>Purification, recycling and wastewater treatment at scale.</p>
-            <span class="card__link">Learn more →</span>
-          </a>
-          <a href="#" class="card reveal" style="--d:.12s">
-            <span class="card__icon"><svg viewBox="0 0 24 24"><path d="M3 20h18M6 20v-7m6 7V8m6 12V4"/></svg></span>
-            <h3>Financial Services</h3>
-            <p>Capital solutions backing growth across the Group's ecosystem.</p>
-            <span class="card__link">Learn more →</span>
+
+          <a href="contact.html" class="bento-item reveal" style="--d:.12s">
+            <img src="https://www.oppo.com/content/dam/oppo_com/oppo/product-asset-library/reno/reno16-series/in/reno16/white-purple-violet/v1/assets/images-ksp-s3-in-img-3-1-ecbbf8.jpg.webp" alt="Smart and Smooth ColorOS 16" loading="lazy" />
+            <div class="bento-item__body">
+              <span>OPPO AI Ecosystem</span>
+              <h3>Smart &amp; Smooth ColorOS 16</h3>
+              <p>Next-generation fluid animations, AI Productivity Suite, and Trinity Engine performance optimization.</p>
+            </div>
           </a>
         </div>
       </div>
     </section>
 
-    <!-- PROJECTS -->
-    <section class="section" id="projects">
+    <!-- TABLETS, AUDIO & ACCESSORIES (OFFICIAL OPPO.COM/IN IOT ECOSYSTEM) -->
+    <section class="section" id="iot">
       <div class="container">
-        <div class="section__head section__head--row reveal">
+        <div class="section__head reveal">
           <div>
-            <span class="eyebrow"><i></i> Featured projects</span>
-            <h2>Landmarks that define <em>what's possible</em>.</h2>
+            <span class="eyebrow"><i></i> Tablets, Audio &amp; Accessories</span>
+            <h2>Complete your <em>OPPO Ecosystem</em>.</h2>
           </div>
-          <a href="#" class="btn btn--outline">All projects <span aria-hidden="true">→</span></a>
+          <a href="contact.html" class="btn btn--outline">Check Bundle Offers →</a>
         </div>
 
-        <div class="projects">
-          <a href="#" class="project project--lg reveal">
-            <img src="assets/bridge.jpg" alt="Chenab Bridge" loading="lazy" />
-            <div class="project__body">
-              <span class="tag">Infrastructure</span>
-              <h3>Chenab Bridge</h3>
-              <p>The world's highest railway arch bridge, spanning the Chenab gorge in the Himalayas.</p>
+        <div class="iot-grid">
+          <a href="contact.html" class="iot-card reveal">
+            <div class="phone-card__top" style="width:100%"><span class="badge-new">New</span><span class="phone-card__series">Tablet</span></div>
+            <div class="iot-card__img">
+              <img src="https://www.oppo.com/content/dam/oppo_com/common/mkt/v2-2/oppo-pad-5-in/navigation/440-440-black-v2.png" alt="OPPO Pad 5" loading="lazy" />
             </div>
+            <h3>OPPO Pad 5</h3>
+            <p>Flagship entertainment &amp; multi-screen productivity tablet.</p>
+            <span class="btn btn--outline btn--sm">Enquire Now</span>
           </a>
-          <a href="#" class="project reveal" style="--d:.08s">
-            <img src="assets/convention.jpg" alt="Bharat Mandapam" loading="lazy" />
-            <div class="project__body">
-              <span class="tag">Engineering &amp; Construction</span>
-              <h3>Bharat Mandapam</h3>
-              <p>India's largest international exhibition &amp; convention centre.</p>
+
+          <a href="contact.html" class="iot-card reveal" style="--d:.04s">
+            <div class="phone-card__top" style="width:100%"><span></span><span class="phone-card__series">Tablet</span></div>
+            <div class="iot-card__img">
+              <img src="https://www.oppo.com/content/dam/oppo/common/mkt/v2-2/oppo-pad-se-in/navigation/440-440-silver.png" alt="OPPO Pad SE" loading="lazy" />
             </div>
+            <h3>OPPO Pad SE</h3>
+            <p>Eye-care display, quad speakers, and all-day learning battery.</p>
+            <span class="btn btn--outline btn--sm">Enquire Now</span>
           </a>
-          <a href="#" class="project reveal" style="--d:.16s">
-            <img src="assets/offshore.jpg" alt="FPSO" loading="lazy" />
-            <div class="project__body">
-              <span class="tag">Energy</span>
-              <h3>FPSO Platforms</h3>
-              <p>Floating production units engineered for the world's offshore fields.</p>
+
+          <a href="contact.html" class="iot-card reveal" style="--d:.08s">
+            <div class="phone-card__top" style="width:100%"><span class="badge-new">New</span><span class="phone-card__series">Audio</span></div>
+            <div class="iot-card__img">
+              <img src="https://www.oppo.com/content/dam/oppo_com/common/mkt/v2-2/oppo-enco-air5-in/navigation/440-440-purple-v1.png" alt="OPPO Enco Air5" loading="lazy" />
             </div>
+            <h3>OPPO Enco Air5</h3>
+            <p>Crystal-clear ANC wireless earbuds with ultra-low latency.</p>
+            <span class="btn btn--outline btn--sm">Enquire Now</span>
+          </a>
+
+          <a href="contact.html" class="iot-card reveal" style="--d:.12s">
+            <div class="phone-card__top" style="width:100%"><span></span><span class="phone-card__series">Audio</span></div>
+            <div class="iot-card__img">
+              <img src="https://www.oppo.com/content/dam/oppo_com/common/mkt/v2-2/oppo-enco-air5-pro-en/navigation/440-440-white.png" alt="OPPO Enco Air5 Pro" loading="lazy" />
+            </div>
+            <h3>OPPO Enco Air5 Pro</h3>
+            <p>Flagship 50dB Active Noise Cancellation &amp; Hi-Res Spatial Audio.</p>
+            <span class="btn btn--outline btn--sm">Enquire Now</span>
+          </a>
+
+          <a href="contact.html" class="iot-card reveal">
+            <div class="phone-card__top" style="width:100%"><span></span><span class="phone-card__series">Audio</span></div>
+            <div class="iot-card__img">
+              <img src="https://www.oppo.com/content/dam/oppo/common/mkt/v2-2/oppo-enco-air4-in/navigation/440-440-blue.png" alt="OPPO Enco Buds3 Pro+" loading="lazy" />
+            </div>
+            <h3>OPPO Enco Buds3 Pro+</h3>
+            <p>Deep bass titan drivers with up to 43 hours total playback.</p>
+            <span class="btn btn--outline btn--sm">Enquire Now</span>
+          </a>
+
+          <a href="contact.html" class="iot-card reveal" style="--d:.04s">
+            <div class="phone-card__top" style="width:100%"><span class="badge-new">New</span><span class="phone-card__series">Accessory</span></div>
+            <div class="iot-card__img">
+              <img src="https://www.oppo.com/content/dam/oppo_com/common/mkt/v2-2/oppo-bubble-en/navigation/440-440-silver.png" alt="OPPO Bubble" loading="lazy" />
+            </div>
+            <h3>OPPO Bubble</h3>
+            <p>Trendy interactive E-Badge companion for the Reno16 Series.</p>
+            <span class="btn btn--outline btn--sm">Enquire Now</span>
+          </a>
+
+          <a href="contact.html" class="iot-card reveal" style="--d:.08s">
+            <div class="phone-card__top" style="width:100%"><span></span><span class="phone-card__series">Charging</span></div>
+            <div class="iot-card__img">
+              <img src="https://www.oppo.com/content/dam/oppo_com/in/mkt/accessories/header/supervooc-100w-dual-ports-gan-power-adapter-lite.png" alt="OPPO SUPERVOOC 100W Dual Ports Power Adapter" loading="lazy" />
+            </div>
+            <h3>SUPERVOOC 100W GaN</h3>
+            <p>Dual-port fast power adapter for smartphones, tablets &amp; laptops.</p>
+            <span class="btn btn--outline btn--sm">Enquire Now</span>
+          </a>
+
+          <a href="contact.html" class="iot-card reveal" style="--d:.12s">
+            <div class="phone-card__top" style="width:100%"><span></span><span class="phone-card__series">Charging</span></div>
+            <div class="iot-card__img">
+              <img src="https://www.oppo.com/content/dam/oppo_com/in/mkt/homepage/navigation/oppo-magnetic-charger-2-airvooc-50w.jpg" alt="OPPO Magnetic Charger 2 AIRVOOC 50W" loading="lazy" />
+            </div>
+            <h3>AIRVOOC 50W Magnetic</h3>
+            <p>Snap-on high-speed wireless flash charger with active cooling.</p>
+            <span class="btn btn--outline btn--sm">Enquire Now</span>
           </a>
         </div>
       </div>
@@ -188,82 +429,120 @@
     <!-- NUMBERS -->
     <section class="numbers">
       <div class="container numbers__inner">
-        <div class="reveal"><b data-count="6">0</b><span>Business areas</span></div>
-        <div class="reveal" style="--d:.06s"><b data-count="3">0</b><span>Divisions</span></div>
-        <div class="reveal" style="--d:.12s"><b data-count="40" data-suffix="+">0</b><span>Nationalities</span></div>
-        <div class="reveal" style="--d:.18s"><b data-count="160" data-suffix="+">0</b><span>Years of excellence</span></div>
+        <div class="reveal"><b data-count="25" data-suffix="+">0</b><span>Mumbai Experience Stores</span></div>
+        <div class="reveal" style="--d:.06s"><b data-count="12">0</b><span>Authorized Service Centres</span></div>
+        <div class="reveal" style="--d:.12s"><b data-count="100" data-suffix="W">0</b><span>SUPERVOOC Flash Charge</span></div>
+        <div class="reveal" style="--d:.18s"><b data-count="60" data-suffix=" min">0</b><span>Express Flash Repair</span></div>
       </div>
     </section>
 
-    <!-- LEGACY -->
-    <section class="section" id="legacy">
+    <!-- MUMBAI STORE LOCATIONS -->
+    <section class="section" id="stores">
       <div class="container">
         <div class="section__head section__head--center reveal">
-          <span class="eyebrow"><i></i> Our legacy</span>
-          <h2>Over a century and a half of <em>building</em>.</h2>
+          <span class="eyebrow"><i></i> OPPO Mumbai Retail &amp; Service Network</span>
+          <h2>Experience OPPO across <em>every zone</em> in Mumbai.</h2>
         </div>
         <div class="timeline">
-          <div class="step reveal"><span class="step__year">1865</span><h3>The beginning</h3><p>Pallonji Mistry founds the company, starting a tradition of craftsmanship.</p></div>
-          <div class="step reveal" style="--d:.08s"><span class="step__year">1930s</span><h3>Landmark builds</h3><p>Iconic institutions and heritage buildings take shape across Mumbai.</p></div>
-          <div class="step reveal" style="--d:.16s"><span class="step__year">1970s</span><h3>Going global</h3><p>Expansion into the Middle East and Africa with large-scale projects.</p></div>
-          <div class="step reveal" style="--d:.24s"><span class="step__year">Today</span><h3>Diversified group</h3><p>Six businesses delivering infrastructure, energy and real estate worldwide.</p></div>
+          <div class="step reveal">
+            <span class="step__year">South Mumbai</span>
+            <h3>Fort, Colaba &amp; Lower Parel</h3>
+            <p>Flagship camera demo zones, Find X9 Ultra priority stock &amp; VIP care desks.</p>
+          </div>
+          <div class="step reveal" style="--d:.08s">
+            <span class="step__year">Western Suburbs</span>
+            <h3>Andheri East, Bandra &amp; Malad</h3>
+            <p>Registered office at Everest Chambers, Marol Naka (Andheri East), full smartphone &amp; IoT showrooms, and express 1-hour repair.</p>
+          </div>
+          <div class="step reveal" style="--d:.16s">
+            <span class="step__year">Central Suburbs</span>
+            <h3>Dadar, Kurla &amp; Ghatkopar</h3>
+            <p>Instant trade-in valuation, student discount desk, and zero down-payment EMI support.</p>
+          </div>
+          <div class="step reveal" style="--d:.24s">
+            <span class="step__year">Thane &amp; Navi Mumbai</span>
+            <h3>Thane West, Vashi &amp; Nerul</h3>
+            <p>Authorized experience stores, corporate bulk supply, and genuine spare-parts service.</p>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- BOARD / CTA -->
+    <!-- OPPO CARE / CTA -->
     <section class="section section--tint" id="board">
       <div class="container cta">
         <div class="cta__copy reveal">
-          <span class="eyebrow eyebrow--light"><i></i> Leadership</span>
-          <h2>Guided by a board that builds for generations.</h2>
-          <p>Meet the people steering the Group's vision of responsible, long-term growth.</p>
+          <span class="eyebrow eyebrow--light"><i></i> OPPO Mumbai Store &amp; Care</span>
+          <h2>Book a live phone demo, exchange quote, or service visit today.</h2>
+          <p>Our Mumbai specialists will assist you with instant store stock availability, exchange bonuses, corporate orders, and priority repair slots.</p>
         </div>
         <div class="cta__actions reveal" style="--d:.1s">
-          <a href="#" class="btn btn--white">Meet the board <span aria-hidden="true">→</span></a>
-          <a href="contact.html" class="btn btn--ghost">Contact us</a>
+          <a href="contact.html" class="btn btn--white btn--lg">Contact OPPO Mumbai <span aria-hidden="true">→</span></a>
+          <a href="#smartphones" class="btn btn--ghost btn--lg">View Smartphones</a>
         </div>
       </div>
     </section>
 
   </main>
 
-  <!-- FOOTER -->
+  <!-- FOOTER (OPPO.COM/IN DARK THEME + COMPLIANCE DETAILS) -->
   <footer class="footer" id="contact">
-    <div class="container footer__grid">
-      <div class="footer__brand">
-        <img src="assets/logo.png" alt="Shapoorji Pallonji" width="182" height="35" />
-        <span class="footer__legal-name">Connect India</span>
-        <span class="footer__brand-note">SHAPOORJI PALLONJI is a brand operated by Connect India</span>
-        <span class="footer__gstin">MSME: UDYAM-MH-18-0588611</span>
-        <p class="footer__address">Flat No. 88, Gandhi Nagar, Cutting No. 10, Kurar Village, Malad East, Mumbai, Maharashtra &ndash; 400097, India.</p>
+    <div class="container">
+      <div class="footer__support-bar">
+        <div class="support-pill">
+          <div>
+            <strong>1800-103-2777</strong>
+            <span>OPPO Support Hotline &bull; 9:00 – 22:00 MON–SUN (Including Holidays)</span>
+          </div>
+        </div>
+        <div class="support-pill">
+          <div>
+            <strong>+91 9958808080</strong>
+            <span>Premium Hotline for Reno &amp; Find Series &bull; 24&times;7 Support</span>
+          </div>
+        </div>
+        <a href="contact.html" class="btn btn--green btn--sm">Book Mumbai Store / Service</a>
       </div>
-      <div>
-        <h4>Company</h4>
-        <a href="#about">About</a>
-        <a href="#legacy">Legacy</a>
-        <a href="#board">Board</a>
-        <a href="#">Careers</a>
+
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <img src="assets/oppo-logo.svg" alt="OPPO Mumbai" width="160" height="28" />
+          <span class="footer__legal-name">INLEAD ELECTRONICS PRIVATE LIMITED</span>
+          <span class="footer__brand-note">OPPO MUMBAI is a brand operated by INLEAD ELECTRONICS PRIVATE LIMITED</span>
+          <p class="footer__address">2ND Floor, Unit No 201 A Wing, Everest Chambers, Marol Naka, Marol Naka Metro Station, Andheri East, Mumbai, Mumbai Suburban, Maharashtra &ndash; 400059, India.</p>
+        </div>
+        <div>
+          <h4>Smartphones</h4>
+          <a href="#smartphones">OPPO Find X9 Ultra</a>
+          <a href="#smartphones">OPPO Find X9s</a>
+          <a href="#reno-spotlight">OPPO Reno16 5G</a>
+          <a href="#smartphones">OPPO Reno16c 5G</a>
+          <a href="#smartphones">OPPO F35 Pro 5G</a>
+          <a href="#smartphones">OPPO F35 5G</a>
+        </div>
+        <div>
+          <h4>IoT Products</h4>
+          <a href="#iot">OPPO Pad 5</a>
+          <a href="#iot">OPPO Pad SE</a>
+          <a href="#iot">OPPO Enco Air5 Pro</a>
+          <a href="#iot">OPPO Enco Air5</a>
+          <a href="#iot">OPPO Enco Buds3 Pro+</a>
+          <a href="#iot">OPPO Bubble</a>
+        </div>
+        <div>
+          <h4>Support &amp; Legal</h4>
+          <a href="#stores">Mumbai Store Locator</a>
+          <a href="contact.html">Service Center &amp; Reservation</a>
+          <a href="terms.html">Terms &amp; Conditions</a>
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="contact.html">Contact Us</a>
+        </div>
       </div>
-      <div>
-        <h4>Businesses</h4>
-        <a href="#businesses">Engineering &amp; Construction</a>
-        <a href="#businesses">Infrastructure</a>
-        <a href="#businesses">Energy</a>
-        <a href="#businesses">Real Estate</a>
+
+      <div class="footer__bottom">
+        <span>&copy; <span id="year"></span> INLEAD ELECTRONICS PRIVATE LIMITED. All rights reserved.</span>
+        <span><a href="privacy.html" class="inl">Privacy Policy</a> &middot; <a href="terms.html" class="inl">Terms &amp; Conditions</a> &middot; Mumbai, India</span>
       </div>
-      <div>
-        <h4>Connect</h4>
-        <a href="https://in.linkedin.com/company/shapoorji-pallonji-&-co--ltd-" target="_blank" rel="noreferrer">LinkedIn</a>
-        <a href="https://en.wikipedia.org/wiki/Shapoorji_Pallonji_Group" target="_blank" rel="noreferrer">Wikipedia</a>
-        <a href="terms.html">Terms &amp; Conditions</a>
-        <a href="privacy.html">Privacy Policy</a>
-        <a href="contact.html">Contact</a>
-      </div>
-    </div>
-    <div class="container footer__bottom">
-      <span>&copy; <span id="year"></span> Connect India. All rights reserved.</span>
-      <span>Privacy &middot; Terms</span>
     </div>
   </footer>
 
